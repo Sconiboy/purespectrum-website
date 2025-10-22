@@ -121,7 +121,7 @@ export default function Home() {
                 <Building2 className="h-12 w-12 text-secondary mb-4" />
                 <CardTitle>Pharmaceutical Grade</CardTitle>
                 <CardDescription>
-                  Formulated by renowned pharmaceutical chemist. Made in certified US laboratory with full batch testing.
+                  Formulated by renowned chemist with 20+ years pharmaceutical experience. Made in certified US laboratory with full batch testing.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -353,7 +353,7 @@ export default function Home() {
               <div>
                 <h3 className="text-2xl font-bold mb-3 text-primary">Formulated by Pharmaceutical Expert</h3>
                 <p className="text-gray-700 text-lg">
-                  PureSpectrum was developed by a renowned pharmaceutical chemist with extensive experience in oncology and medical cannabis research. Unlike basement labs or overseas manufacturers producing 7-OH products, our formulation is created in a certified US pharmaceutical laboratory with rigorous quality control and batch testing.
+                  PureSpectrum was developed by a renowned chemist with over 20 years in the pharmaceutical industry. Unlike basement labs or overseas manufacturers producing 7-OH products, our formulation is created in a certified US pharmaceutical laboratory with rigorous quality control and batch testing.
                 </p>
               </div>
             </div>
