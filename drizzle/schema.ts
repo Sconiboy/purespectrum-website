@@ -18,4 +18,22 @@ export const users = mysqlTable("users", {
 export type User = typeof users.$inferSelect;
 export type InsertUser = typeof users.$inferInsert;
 
-// TODO: Add your tables here
+// Contact form submissions from wholesale/distributor inquiries
+export const contactSubmissions = mysqlTable("contactSubmissions", {
+  id: varchar("id", { length: 64 }).primaryKey(),
+  companyName: varchar("companyName", { length: 255 }).notNull(),
+  contactName: varchar("contactName", { length: 255 }).notNull(),
+  email: varchar("email", { length: 320 }).notNull(),
+  phone: varchar("phone", { length: 50 }),
+  businessType: varchar("businessType", { length: 100 }),
+  currentProducts: text("currentProducts"),
+  estimatedVolume: varchar("estimatedVolume", { length: 100 }),
+  state: varchar("state", { length: 50 }),
+  inquiryType: mysqlEnum("inquiryType", ["wholesale", "white_label", "general"]).notNull(),
+  message: text("message"),
+  status: mysqlEnum("status", ["new", "contacted", "qualified", "closed"]).default("new").notNull(),
+  createdAt: timestamp("createdAt").defaultNow(),
+});
+
+export type ContactSubmission = typeof contactSubmissions.$inferSelect;
+export type InsertContactSubmission = typeof contactSubmissions.$inferInsert;

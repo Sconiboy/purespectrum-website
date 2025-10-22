@@ -1,7 +1,7 @@
-import { eq } from "drizzle-orm";
+import { desc, eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { InsertUser, users } from "../drizzle/schema";
-import { ENV } from './_core/env';
+import { contactSubmissions, InsertContactSubmission, InsertUser, users } from "../drizzle/schema";
+import { ENV } from "./_core/env";
 
 let _db: ReturnType<typeof drizzle> | null = null;
 
@@ -85,4 +85,25 @@ export async function getUser(id: string) {
   return result.length > 0 ? result[0] : undefined;
 }
 
-// TODO: add feature queries here as your schema grows.
+// Contact submission queries
+export async function createContactSubmission(data: Omit<InsertContactSubmission, "id">) {
+  const db = await getDb();
+  if (!db) {
+    console.warn("[Database] Cannot create contact submission: database not available");
+    throw new Error("Database not available");
+  }
+
+  const id = `contact_${Date.now()}_${Math.random().toString(36).substring(7)}`;
+  await db.insert(contactSubmissions).values({ ...data, id });
+  return id;
+}
+
+export async function getContactSubmissions() {
+  const db = await getDb();
+  if (!db) {
+    console.warn("[Database] Cannot get contact submissions: database not available");
+    return [];
+  }
+
+  return await db.select().from(contactSubmissions).orderBy(desc(contactSubmissions.createdAt));
+}
