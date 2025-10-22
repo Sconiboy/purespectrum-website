@@ -121,7 +121,7 @@ export default function ContactStatic() {
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
                   {/* Web3Forms Access Key - Replace with your own */}
-                  <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+                  <input type="hidden" name="access_key" value="7e57fd05-68ea-4f99-ac15-a902b886a89c" />
                   <input type="hidden" name="subject" value="New PureSpectrum Wholesale Inquiry" />
                   
                   <div className="grid md:grid-cols-2 gap-6">
