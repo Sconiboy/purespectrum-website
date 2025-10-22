@@ -49,7 +49,7 @@ export default function Home() {
                 The Legal Alternative to 7-Hydroxymitragynine
               </h1>
               <p className="text-xl text-gray-700 mb-8">
-                Pharmaceutical-grade, full-spectrum alkaloid blend that delivers the same receptor activation as 7-OH—without the legal risks, dangerous side effects, or regulatory concerns.
+                Pharmaceutical-grade, full-spectrum alkaloid blend that delivers the same receptor activation as 7-OH—without the kratom alkaloids, benzo receptor interaction, legal risks, or regulatory concerns.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/contact">
@@ -111,7 +111,7 @@ export default function Home() {
                 <Beaker className="h-12 w-12 text-secondary mb-4" />
                 <CardTitle>Safer Profile</CardTitle>
                 <CardDescription>
-                  Acts on opioid receptors like 7-OH but avoids benzodiazepine receptors—eliminating anxiety and dangerous withdrawal.
+                  Acts on opioid receptors like 7-OH but avoids benzodiazepine receptors (no anxiety/withdrawal) and contains no kratom alkaloids (no nausea/itching).
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -159,33 +159,24 @@ export default function Home() {
                     </td>
                   </tr>
                   <tr>
-                    <td className="py-3 px-4 font-medium">Benzo Receptor Interaction</td>
+                    <td className="py-3 px-4 font-medium">Nausea & Itching</td>
                     <td className="py-3 px-4 text-center text-secondary">
-                      <CheckCircle2 className="inline h-5 w-5" /> No
+                      <CheckCircle2 className="inline h-5 w-5" /> No (No Kratom Alkaloids)
                     </td>
                     <td className="py-3 px-4 text-center text-red-600">
-                      <AlertTriangle className="inline h-5 w-5" /> Yes (Causes Anxiety)
+                      <AlertTriangle className="inline h-5 w-5" /> Common (Mitragynine/7-OH)
                     </td>
                   </tr>
                   <tr className="bg-white">
-                    <td className="py-3 px-4 font-medium">Nausea</td>
+                    <td className="py-3 px-4 font-medium">Anxiety & Withdrawal Risk</td>
                     <td className="py-3 px-4 text-center text-secondary">
-                      <CheckCircle2 className="inline h-5 w-5" /> No
+                      <CheckCircle2 className="inline h-5 w-5" /> No (No Benzo Interaction)
                     </td>
                     <td className="py-3 px-4 text-center text-red-600">
-                      <AlertTriangle className="inline h-5 w-5" /> Common
+                      <AlertTriangle className="inline h-5 w-5" /> Yes (Benzo Receptors)
                     </td>
                   </tr>
                   <tr>
-                    <td className="py-3 px-4 font-medium">Anxiety / Withdrawal Risk</td>
-                    <td className="py-3 px-4 text-center text-secondary">
-                      <CheckCircle2 className="inline h-5 w-5" /> No
-                    </td>
-                    <td className="py-3 px-4 text-center text-red-600">
-                      <AlertTriangle className="inline h-5 w-5" /> Yes (Dangerous)
-                    </td>
-                  </tr>
-                  <tr className="bg-white">
                     <td className="py-3 px-4 font-medium">User-Reported Joy/Happiness</td>
                     <td className="py-3 px-4 text-center text-secondary">
                       <CheckCircle2 className="inline h-5 w-5" /> Yes
@@ -236,7 +227,9 @@ export default function Home() {
                 <CardHeader>
                   <CardTitle className="text-red-900">FDA & DEA Crackdown (July 2025)</CardTitle>
                   <CardDescription>
-                    FDA recommended scheduling 7-OH under the Controlled Substances Act. HHS Secretary Robert F. Kennedy Jr. stated: "We're taking action on 7-OH as a critical step in the fight against opioid addiction." FDA Commissioner Marty Makary warned: "7-OH is an opioid that can be more potent than morphine."
+                    FDA recommended scheduling 7-OH under the Controlled Substances Act. DEA asked to classify 7-OH as Schedule I drug (like heroin).<br/><br/>
+                    <strong>HHS Secretary Robert F. Kennedy Jr.:</strong> "Today, we're taking action on 7-OH as a critical step in the fight against opioid addiction. We will protect the health of our nation's youth."<br/><br/>
+                    <strong>FDA Commissioner Marty Makary, M.D.:</strong> "Vape stores are popping up in every neighborhood in America, and many are selling addictive products like concentrated 7-OH. After the last wave of the opioid epidemic, we cannot get caught flat-footed again. 7-OH is an opioid that can be more potent than morphine."
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -255,9 +248,18 @@ export default function Home() {
 
               <Card className="border-red-200">
                 <CardHeader>
+                  <CardTitle className="text-red-900">Wrongful Death Lawsuits Mounting</CardTitle>
+                  <CardDescription>
+                    Kratom and 7-OH linked to <strong>thousands of deaths</strong> across the country (Tampa Bay Times). First kratom wrongful death jury verdict resulted in liability on all counts. Florida judge issued <strong>$11 million default judgment</strong> against kratom distributor. Gas stations and manufacturers facing multiple wrongful death lawsuits. Scientific research shows kratom is <strong>63 times more deadly</strong> than other natural products.
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+
+              <Card className="border-red-200">
+                <CardHeader>
                   <CardTitle className="text-red-900">Dangerous Synthetics Flooding Market</CardTitle>
                   <CardDescription>
-                    As 7-OH faces bans, fly-by-night operators are releasing dangerous alternatives: MGM-15, 3M, and products containing undetectable modified 7-OH that's completely illegal. These products put retailers at severe legal risk.
+                    As 7-OH faces bans, fly-by-night operators are releasing dangerous alternatives: MGM-15, 3M, and products containing undetectable modified 7-OH that's completely illegal. These products put retailers at severe legal and liability risk.
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -301,7 +303,17 @@ export default function Home() {
                     Critical Difference: No Benzo Receptors
                   </h3>
                   <p className="text-gray-700 ml-8">
-                    Unlike 7-OH, PureSpectrum does NOT interact with benzodiazepine receptors. This eliminates the anxiety, nausea, itching, and dangerous withdrawal potential associated with 7-OH.
+                    Unlike 7-OH, PureSpectrum does NOT interact with benzodiazepine receptors. This eliminates the anxiety and dangerous withdrawal potential caused by 7-OH's benzo receptor interaction.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">
+                    <CheckCircle2 className="h-6 w-6 text-secondary" />
+                    No Kratom Alkaloids
+                  </h3>
+                  <p className="text-gray-700 ml-8">
+                    Contains no mitragynine or 7-hydroxymitragynine, eliminating the nausea and itching commonly caused by these kratom alkaloids.
                   </p>
                 </div>
 
