@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle2, AlertTriangle, Shield, Beaker, Building2, Scale } from "lucide-react";
 import { Link } from "wouter";
+import Disclaimer from "@/components/Disclaimer";
 
 export default function Home() {
   return (
@@ -49,7 +50,7 @@ export default function Home() {
                 The Legal Alternative to 7-Hydroxymitragynine
               </h1>
               <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-6 sm:mb-8">
-                Pharmaceutical-grade, full-spectrum alkaloid blend that delivers the same receptor activation as 7-OH—without the kratom alkaloids, benzo receptor interaction, legal risks, or regulatory concerns.
+                Pharmaceutical-grade alkaloid blend formulated to provide a similar experience to 7-OH—without kratom alkaloids, legal risks, or regulatory concerns. Users report comparable benefits with a cleaner profile.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/contact">
@@ -91,7 +92,7 @@ export default function Home() {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4 text-primary">Why PureSpectrum?</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Same benefits. Better experience. Zero legal risk.
+              Users report similar benefits with a cleaner experience and zero legal risk.
             </p>
           </div>
 
@@ -111,7 +112,7 @@ export default function Home() {
                 <Beaker className="h-12 w-12 text-secondary mb-4" />
                 <CardTitle>Safer Profile</CardTitle>
                 <CardDescription>
-                  Acts on opioid receptors like 7-OH but avoids benzodiazepine receptors (no anxiety/withdrawal) and contains no kratom alkaloids (no nausea/itching).
+                  Formulated without kratom alkaloids or compounds that interact with benzodiazepine receptors. Users report no nausea, itching, anxiety, or withdrawal concerns.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -150,39 +151,39 @@ export default function Home() {
                     </td>
                   </tr>
                   <tr className="bg-white">
-                    <td className="py-3 px-4 font-medium">Opioid Receptor Activation</td>
+                    <td className="py-3 px-4 font-medium">User-Reported Experience</td>
                     <td className="py-3 px-4 text-center text-secondary">
-                      <CheckCircle2 className="inline h-5 w-5" />
+                      <CheckCircle2 className="inline h-5 w-5" /> Similar to 7-OH
                     </td>
                     <td className="py-3 px-4 text-center text-secondary">
-                      <CheckCircle2 className="inline h-5 w-5" />
+                      <CheckCircle2 className="inline h-5 w-5" /> Baseline
                     </td>
                   </tr>
                   <tr>
-                    <td className="py-3 px-4 font-medium">Nausea & Itching</td>
+                    <td className="py-3 px-4 font-medium">User-Reported Nausea & Itching</td>
                     <td className="py-3 px-4 text-center text-secondary">
-                      <CheckCircle2 className="inline h-5 w-5" /> No (No Kratom Alkaloids)
+                      <CheckCircle2 className="inline h-5 w-5" /> Not Reported
                     </td>
                     <td className="py-3 px-4 text-center text-red-600">
-                      <AlertTriangle className="inline h-5 w-5" /> Common (Mitragynine/7-OH)
+                      <AlertTriangle className="inline h-5 w-5" /> Common
                     </td>
                   </tr>
                   <tr className="bg-white">
-                    <td className="py-3 px-4 font-medium">Anxiety & Withdrawal Risk</td>
+                    <td className="py-3 px-4 font-medium">User-Reported Anxiety</td>
                     <td className="py-3 px-4 text-center text-secondary">
-                      <CheckCircle2 className="inline h-5 w-5" /> No (No Benzo Interaction)
+                      <CheckCircle2 className="inline h-5 w-5" /> Not Reported
                     </td>
                     <td className="py-3 px-4 text-center text-red-600">
-                      <AlertTriangle className="inline h-5 w-5" /> Yes (Benzo Receptors)
+                      <AlertTriangle className="inline h-5 w-5" /> Commonly Reported
                     </td>
                   </tr>
                   <tr>
-                    <td className="py-3 px-4 font-medium">User-Reported Joy/Happiness</td>
+                    <td className="py-3 px-4 font-medium">User-Reported Mood Enhancement</td>
                     <td className="py-3 px-4 text-center text-secondary">
-                      <CheckCircle2 className="inline h-5 w-5" /> Yes
+                      <CheckCircle2 className="inline h-5 w-5" /> Frequently Reported
                     </td>
                     <td className="py-3 px-4 text-center text-gray-400">
-                      Limited
+                      Less Common
                     </td>
                   </tr>
                   <tr>
@@ -290,20 +291,20 @@ export default function Home() {
                 <div>
                   <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">
                     <CheckCircle2 className="h-6 w-6 text-secondary" />
-                    Same Receptor Activation
+                    Similar User Experience
                   </h3>
                   <p className="text-gray-700 ml-8">
-                    PureSpectrum acts on the same opioid receptors as 7-hydroxymitragynine, delivering the desired effects users seek.
+                    Users report PureSpectrum provides a similar experience to 7-hydroxymitragynine products, delivering comparable effects.
                   </p>
                 </div>
 
                 <div>
                   <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">
                     <CheckCircle2 className="h-6 w-6 text-secondary" />
-                    Critical Difference: No Benzo Receptors
+                    Cleaner Formulation
                   </h3>
                   <p className="text-gray-700 ml-8">
-                    Unlike 7-OH, PureSpectrum does NOT interact with benzodiazepine receptors. This eliminates the anxiety and dangerous withdrawal potential caused by 7-OH's benzo receptor interaction.
+                    Formulated without compounds that interact with benzodiazepine receptors. Users report no anxiety or withdrawal concerns commonly associated with 7-OH products.
                   </p>
                 </div>
 
@@ -313,17 +314,17 @@ export default function Home() {
                     No Kratom Alkaloids
                   </h3>
                   <p className="text-gray-700 ml-8">
-                    Contains no mitragynine or 7-hydroxymitragynine, eliminating the nausea and itching commonly caused by these kratom alkaloids.
+                    Contains no mitragynine or 7-hydroxymitragynine. Users report no nausea or itching commonly associated with kratom-based products.
                   </p>
                 </div>
 
                 <div>
                   <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">
                     <CheckCircle2 className="h-6 w-6 text-secondary" />
-                    Enhanced User Experience
+                    Positive User Feedback
                   </h3>
                   <p className="text-gray-700 ml-8">
-                    User reports indicate enhanced feelings of joy and happiness—benefits not typically associated with 7-OH products.
+                    Users report enhanced mood and sense of well-being—experiences not typically associated with 7-OH products.
                   </p>
                 </div>
 
@@ -367,7 +368,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto text-center mb-12">
             <h2 className="text-4xl font-bold mb-4 text-primary">Wholesale & White Label Solutions</h2>
             <p className="text-xl text-gray-700">
-              Save your business from 7-OH bans. Expand into kratom-restricted states. Meet the growing demand with a legal, reliable solution.
+              Protect your business from regulatory changes. Expand into restricted markets. Serve customer demand with a compliant, reliable solution.
             </p>
           </div>
 
@@ -427,9 +428,9 @@ export default function Home() {
 
           <div className="bg-white rounded-lg shadow-lg p-8 text-center">
             <Badge className="mb-4 bg-red-600 text-white">High Demand - Waitlist Growing</Badge>
-            <h3 className="text-2xl font-bold mb-4">Secure Your Allocation</h3>
+            <h3 className="text-2xl font-bold mb-4">Secure Your Supply</h3>
             <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
-              Demand is extremely high as retailers seek legal alternatives to 7-OH. Join our growing waitlist and be among the first to receive wholesale pricing and availability.
+              As retailers transition away from 7-OH, demand for legal alternatives continues to grow. Join our wholesale program to ensure consistent supply and competitive pricing.
             </p>
             <Link href="/contact">
               <Button size="lg" className="bg-secondary hover:bg-secondary/90">
@@ -439,6 +440,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Disclaimer */}
+      <Disclaimer />
 
       {/* Footer */}
       <footer className="bg-primary text-white py-12">
