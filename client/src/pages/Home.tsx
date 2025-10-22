@@ -19,18 +19,18 @@ export default function Home() {
               />
             </div>
             <div className="hidden md:flex items-center gap-6">
-              <Link href="#benefits" className="text-sm font-medium hover:text-primary transition-colors">
+              <a href="#benefits" className="text-sm font-medium hover:text-primary transition-colors cursor-pointer">
                 Benefits
-              </Link>
-              <Link href="#crisis" className="text-sm font-medium hover:text-primary transition-colors">
+              </a>
+              <a href="#crisis" className="text-sm font-medium hover:text-primary transition-colors cursor-pointer">
                 The 7-OH Crisis
-              </Link>
-              <Link href="#science" className="text-sm font-medium hover:text-primary transition-colors">
+              </a>
+              <a href="#science" className="text-sm font-medium hover:text-primary transition-colors cursor-pointer">
                 Science
-              </Link>
-              <Link href="#wholesale" className="text-sm font-medium hover:text-primary transition-colors">
+              </a>
+              <a href="#wholesale" className="text-sm font-medium hover:text-primary transition-colors cursor-pointer">
                 Wholesale
-              </Link>
+              </a>
               <Link href="/contact">
                 <Button>Request Pricing</Button>
               </Link>
@@ -57,11 +57,11 @@ export default function Home() {
                     Request Wholesale Pricing
                   </Button>
                 </Link>
-                <Link href="#science">
+                <a href="#science">
                   <Button size="lg" variant="outline" className="w-full sm:w-auto">
                     Learn the Science
                   </Button>
-                </Link>
+                </a>
               </div>
               <div className="mt-8 flex items-center gap-6 text-sm text-gray-600">
                 <div className="flex items-center gap-2">
@@ -457,10 +457,10 @@ export default function Home() {
             <div>
               <h4 className="font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-blue-100">
-                <li><Link href="#benefits" className="hover:text-white transition-colors">Benefits</Link></li>
-                <li><Link href="#crisis" className="hover:text-white transition-colors">The 7-OH Crisis</Link></li>
-                <li><Link href="#science" className="hover:text-white transition-colors">Science & Safety</Link></li>
-                <li><Link href="#wholesale" className="hover:text-white transition-colors">Wholesale</Link></li>
+                <li><a href="#benefits" className="hover:text-white transition-colors cursor-pointer">Benefits</a></li>
+                <li><a href="#crisis" className="hover:text-white transition-colors cursor-pointer">The 7-OH Crisis</a></li>
+                <li><a href="#science" className="hover:text-white transition-colors cursor-pointer">Science & Safety</a></li>
+                <li><a href="#wholesale" className="hover:text-white transition-colors cursor-pointer">Wholesale</a></li>
               </ul>
             </div>
             <div>
