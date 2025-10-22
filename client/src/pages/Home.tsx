@@ -40,15 +40,15 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-b from-blue-50 to-white">
+      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-blue-50 to-white">
         <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div>
               <Badge className="mb-4 bg-secondary text-white">Legal in All 50 States</Badge>
-              <h1 className="text-5xl font-bold mb-6 text-primary">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-primary leading-tight">
                 The Legal Alternative to 7-Hydroxymitragynine
               </h1>
-              <p className="text-xl text-gray-700 mb-8">
+              <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-6 sm:mb-8">
                 Pharmaceutical-grade, full-spectrum alkaloid blend that delivers the same receptor activation as 7-OH—without the kratom alkaloids, benzo receptor interaction, legal risks, or regulatory concerns.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -63,7 +63,7 @@ export default function Home() {
                   </Button>
                 </a>
               </div>
-              <div className="mt-8 flex items-center gap-6 text-sm text-gray-600">
+              <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 text-sm text-gray-600">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-5 w-5 text-secondary" />
                   <span>FDA-Approved Alkaloids</span>
