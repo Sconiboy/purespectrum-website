@@ -12,3 +12,17 @@
 - [x] Enhance typography and decorative elements
 - [x] Match art nouveau aesthetic from promotional image
 
+
+- [x] Fix comparison table - fill in all Be Bliss cells
+- [x] Add scientific receptor names (μ-opioid, GABA-A) to table
+
+
+- [x] Add section about dual withdrawal danger from 7-OH (opioid + benzo)
+- [x] Emphasize that benzo withdrawal can be lethal
+
+
+- [x] Update alkaloid source row to emphasize botanical diversity and FDA approval
+
+
+- [x] Update manufacturing row - Be Bliss US only, 7-OH from US/Asia/India
+

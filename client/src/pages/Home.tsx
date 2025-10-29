@@ -181,14 +181,14 @@ export default function Home() {
                   <td className="p-4 text-red-600">✗ Banned in 6+ states, DEA scrutiny</td>
                 </tr>
                 <tr className="border-b bg-gray-50">
-                  <td className="p-4 font-medium">Receptor Activation</td>
-                  <td className="p-4">Users report similar opioid receptor effects</td>
-                  <td className="p-4">Opioid receptor agonist</td>
+                  <td className="p-4 font-medium">μ-Opioid Receptor (MOR) Activation</td>
+                  <td className="p-4 text-secondary font-semibold">✓ Users report similar activation</td>
+                  <td className="p-4 text-secondary font-semibold">✓ Strong MOR agonist</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-4 font-medium">Benzo Receptor Interaction</td>
-                  <td className="p-4 text-secondary font-semibold">✓ None (no anxiety/withdrawal)</td>
-                  <td className="p-4 text-red-600">✗ Yes (causes anxiety, dangerous withdrawal)</td>
+                  <td className="p-4 font-medium">GABA-A (Benzodiazepine) Receptor</td>
+                  <td className="p-4 text-secondary font-semibold">✓ No interaction (no anxiety/withdrawal)</td>
+                  <td className="p-4 text-red-600">✗ Interacts with GABA-A receptors (causes anxiety, dangerous withdrawal)</td>
                 </tr>
                 <tr className="border-b bg-gray-50">
                   <td className="p-4 font-medium">Nausea & Itching</td>
@@ -202,13 +202,13 @@ export default function Home() {
                 </tr>
                 <tr className="border-b bg-gray-50">
                   <td className="p-4 font-medium">Manufacturing</td>
-                  <td className="p-4 text-secondary font-semibold">✓ US pharmaceutical lab</td>
-                  <td className="p-4 text-red-600">✗ Often overseas or unregulated labs</td>
+                  <td className="p-4 text-secondary font-semibold">✓ Exclusively US pharmaceutical lab</td>
+                  <td className="p-4 text-red-600">✗ US, Asia, India - inconsistent quality control, unregulated facilities</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-4 font-medium">Alkaloid Source</td>
-                  <td className="p-4 text-secondary font-semibold">✓ FDA-approved, non-kratom</td>
-                  <td className="p-4 text-red-600">✗ Kratom-derived (regulatory risk)</td>
+                  <td className="p-4 text-secondary font-semibold">✓ Multiple botanical sources (FDA-approved for supplements)</td>
+                  <td className="p-4 text-red-600">✗ Single source: Kratom (Mitragyna speciosa) - DEA scrutiny, state bans</td>
                 </tr>
               </tbody>
             </table>
@@ -279,6 +279,29 @@ export default function Home() {
               </CardContent>
             </Card>
           </div>
+
+          <Card className="border-red-200 mb-12">
+            <CardHeader>
+              <CardTitle className="text-red-900">Dual Withdrawal Danger: Opioid + Benzodiazepine</CardTitle>
+              <CardDescription className="text-red-700">
+                7-OH creates a uniquely dangerous withdrawal profile that Be Bliss avoids entirely.
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="text-red-700">
+              <p className="mb-4">
+                <strong>7-Hydroxymitragynine interacts with both μ-opioid receptors AND GABA-A (benzodiazepine) receptors.</strong> This means users face withdrawal from two different receptor systems simultaneously.
+              </p>
+              <p className="mb-4">
+                <strong>Opioid withdrawal</strong> from 7-OH is extremely uncomfortable—nausea, anxiety, muscle pain, insomnia, and intense cravings.
+              </p>
+              <p className="mb-4">
+                <strong>Benzodiazepine withdrawal is potentially lethal.</strong> GABA-A receptor withdrawal can cause seizures, delirium tremens, cardiovascular complications, and death. Medical supervision is often required to safely discontinue benzodiazepines.
+              </p>
+              <p>
+                <strong>Be Bliss does not interact with GABA-A receptors,</strong> eliminating the risk of dangerous benzodiazepine-type withdrawal. Users report they can discontinue use without the severe withdrawal symptoms associated with 7-OH.
+              </p>
+            </CardContent>
+          </Card>
 
           <Card className="border-red-200 mb-12">
             <CardHeader>
