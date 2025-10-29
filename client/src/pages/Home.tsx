@@ -9,27 +9,29 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Navigation */}
-      <nav className="border-b bg-white/95 backdrop-blur sticky top-0 z-50">
-        <div className="container py-4">
+      <nav className="border-b-2 border-primary/20 bg-gradient-to-r from-white via-amber-50/30 to-white backdrop-blur-lg sticky top-0 z-50 shadow-lg">
+        <div className="container py-5">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <h1 className="text-2xl font-bold text-primary">Be Bliss</h1>
+              <h1 className="text-3xl font-bold bg-gradient-to-r from-primary via-purple-700 to-secondary bg-clip-text text-transparent tracking-tight">
+                Be Bliss
+              </h1>
             </div>
-            <div className="hidden md:flex items-center gap-6">
-              <a href="#benefits" className="text-sm font-medium hover:text-primary transition-colors cursor-pointer">
+            <div className="hidden md:flex items-center gap-8">
+              <a href="#benefits" className="text-base font-semibold text-gray-700 hover:text-primary transition-all duration-300 hover:scale-105 cursor-pointer">
                 Benefits
               </a>
-              <a href="#crisis" className="text-sm font-medium hover:text-primary transition-colors cursor-pointer">
+              <a href="#crisis" className="text-base font-semibold text-gray-700 hover:text-primary transition-all duration-300 hover:scale-105 cursor-pointer">
                 The 7-OH Crisis
               </a>
-              <a href="#science" className="text-sm font-medium hover:text-primary transition-colors cursor-pointer">
+              <a href="#science" className="text-base font-semibold text-gray-700 hover:text-primary transition-all duration-300 hover:scale-105 cursor-pointer">
                 Science
               </a>
-              <a href="#wholesale" className="text-sm font-medium hover:text-primary transition-colors cursor-pointer">
+              <a href="#wholesale" className="text-base font-semibold text-gray-700 hover:text-primary transition-all duration-300 hover:scale-105 cursor-pointer">
                 Wholesale
               </a>
               <Link href="/contact">
-                <Button>Request Pricing</Button>
+                <Button className="bg-gradient-to-r from-primary to-purple-700 hover:from-primary/90 hover:to-purple-700/90 shadow-lg px-6">Request Pricing</Button>
               </Link>
             </div>
           </div>
@@ -37,86 +39,111 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-blue-50 to-white">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      <section className="relative py-12 sm:py-16 lg:py-24 bg-gradient-to-br from-amber-50 via-orange-50 to-rose-50 overflow-hidden">
+        {/* Decorative background elements */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 left-10 w-64 h-64 bg-primary rounded-full blur-3xl"></div>
+          <div className="absolute bottom-10 right-10 w-96 h-96 bg-secondary rounded-full blur-3xl"></div>
+        </div>
+        
+        <div className="container relative z-10">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             <div>
-              <Badge className="mb-4 bg-secondary text-white">Legal in All 50 States</Badge>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-primary leading-tight">
+              <Badge className="mb-6 bg-gradient-to-r from-primary to-secondary text-white px-6 py-2 text-sm font-semibold shadow-lg border-2 border-white/50">
+                ✨ Legal in All 50 States ✨
+              </Badge>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 sm:mb-8 bg-gradient-to-r from-primary via-purple-700 to-secondary bg-clip-text text-transparent leading-tight">
                 The Legal Alternative to 7-Hydroxymitragynine
               </h1>
-              <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-6 sm:mb-8">
-                Pharmaceutical-grade alkaloid blend formulated to provide a similar experience to 7-OH—without kratom alkaloids, legal risks, or regulatory concerns. Users report comparable benefits with a cleaner profile.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="relative">
+                <div className="absolute -left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-primary to-secondary rounded-full"></div>
+                <p className="text-lg sm:text-xl lg:text-2xl text-gray-800 mb-8 sm:mb-10 pl-6 font-light leading-relaxed">
+                  Pharmaceutical-grade alkaloid blend formulated to provide a similar experience to 7-OH—without kratom alkaloids, legal risks, or regulatory concerns. Users report comparable benefits with a cleaner, more joyful profile.
+                </p>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <Link href="/contact">
-                  <Button size="lg" className="w-full sm:w-auto">
+                  <Button size="lg" className="w-full sm:w-auto bg-gradient-to-r from-primary to-purple-700 hover:from-primary/90 hover:to-purple-700/90 shadow-xl text-lg px-8 py-6">
                     Request Wholesale Pricing
                   </Button>
                 </Link>
                 <a href="#science">
-                  <Button size="lg" variant="outline" className="w-full sm:w-auto">
+                  <Button size="lg" variant="outline" className="w-full sm:w-auto border-2 border-primary text-primary hover:bg-primary hover:text-white shadow-lg text-lg px-8 py-6">
                     Learn the Science
                   </Button>
                 </a>
               </div>
-              <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 text-sm text-gray-600">
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-secondary" />
-                  <span>FDA-Approved Alkaloids</span>
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 text-base text-gray-700">
+                <div className="flex items-center gap-3 bg-white/70 backdrop-blur px-4 py-3 rounded-full shadow-md">
+                  <CheckCircle2 className="h-6 w-6 text-secondary" />
+                  <span className="font-semibold">FDA-Approved Alkaloids</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-secondary" />
-                  <span>Made in USA</span>
+                <div className="flex items-center gap-3 bg-white/70 backdrop-blur px-4 py-3 rounded-full shadow-md">
+                  <CheckCircle2 className="h-6 w-6 text-secondary" />
+                  <span className="font-semibold">Made in USA</span>
                 </div>
               </div>
             </div>
-            <div className="flex justify-center">
-              <img 
-                src="/bebliss-bottle.jpg" 
-                alt="Be Bliss Bottle" 
-                className="max-w-md w-full drop-shadow-2xl rounded-lg"
-              />
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative">
+                <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-3xl blur-2xl"></div>
+                <img 
+                  src="/bebliss-promo.jpg" 
+                  alt="Be Bliss - Experience Pure Bliss" 
+                  className="relative max-w-lg w-full drop-shadow-2xl rounded-2xl border-4 border-white/50 shadow-2xl"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Key Differentiators */}
-      <section id="benefits" className="py-20 bg-white">
+      <section id="benefits" className="py-20 bg-gradient-to-b from-white via-amber-50/20 to-white">
         <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4 text-primary">Why Be Bliss?</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <div className="text-center mb-16">
+            <div className="inline-block mb-6">
+              <h2 className="text-5xl font-bold bg-gradient-to-r from-primary via-purple-700 to-secondary bg-clip-text text-transparent">
+                Why Be Bliss?
+              </h2>
+              <div className="h-1 bg-gradient-to-r from-transparent via-primary to-transparent mt-4 rounded-full"></div>
+            </div>
+            <p className="text-2xl text-gray-700 max-w-3xl mx-auto font-light leading-relaxed">
               Users report similar benefits with a cleaner experience and zero legal risk.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-16">
-            <Card>
+            <Card className="border-2 border-primary/20 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 bg-gradient-to-br from-white to-amber-50/30">
               <CardHeader>
-                <Shield className="h-12 w-12 text-secondary mb-4" />
-                <CardTitle>100% Legal Nationwide</CardTitle>
+                <div className="bg-gradient-to-br from-primary/10 to-secondary/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-4">
+                  <Shield className="h-12 w-12 text-secondary" />
+                </div>
+                <CardTitle className="text-2xl bg-gradient-to-r from-primary to-purple-700 bg-clip-text text-transparent">100% Legal Nationwide</CardTitle>
                 <CardDescription>
                   Contains zero kratom alkaloids or controlled substances. Legal in all 50 states, including kratom-banned markets like Rhode Island, Vermont, Indiana, Wisconsin, Arkansas, and Alabama.
                 </CardDescription>
               </CardHeader>
             </Card>
 
-            <Card>
+            <Card className="border-2 border-secondary/20 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 bg-gradient-to-br from-white to-rose-50/30">
               <CardHeader>
-                <CheckCircle2 className="h-12 w-12 text-secondary mb-4" />
-                <CardTitle>Cleaner User Experience</CardTitle>
+                <div className="bg-gradient-to-br from-secondary/10 to-primary/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-4">
+                  <CheckCircle2 className="h-12 w-12 text-secondary" />
+                </div>
+                <CardTitle className="text-2xl bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent">Cleaner User Experience</CardTitle>
                 <CardDescription>
                   Users report similar receptor activation to 7-OH, but without nausea, itching, or anxiety. Many describe feelings of joy and happiness without the benzo-receptor interaction that causes withdrawal concerns.
                 </CardDescription>
               </CardHeader>
             </Card>
 
-            <Card>
+            <Card className="border-2 border-purple-300/20 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 bg-gradient-to-br from-white to-purple-50/30">
               <CardHeader>
-                <Beaker className="h-12 w-12 text-secondary mb-4" />
-                <CardTitle>Pharmaceutical Standards</CardTitle>
+                <div className="bg-gradient-to-br from-purple-100 to-primary/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-4">
+                  <Beaker className="h-12 w-12 text-primary" />
+                </div>
+                <CardTitle className="text-2xl bg-gradient-to-r from-purple-700 to-primary bg-clip-text text-transparent">Pharmaceutical Standards</CardTitle>
                 <CardDescription>
                   Formulated by a renowned chemist with over 20 years in the pharmaceutical industry. Every alkaloid is FDA-approved for use in dietary supplements.
                 </CardDescription>

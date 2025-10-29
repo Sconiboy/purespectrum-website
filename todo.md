@@ -6,3 +6,9 @@
 - [x] Update hero section with Be Bliss branding
 - [x] Update meta tags and page title to Be Bliss
 
+
+- [x] Add promotional artwork to hero section
+- [x] Make site design more ornate and elegant
+- [x] Enhance typography and decorative elements
+- [x] Match art nouveau aesthetic from promotional image
+
