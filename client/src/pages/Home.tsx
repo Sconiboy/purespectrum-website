@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle2, AlertTriangle, Shield, Beaker, Building2, Scale } from "lucide-react";
+import { CheckCircle2, AlertTriangle, Shield, Beaker, Building2, Scale, Quote } from "lucide-react";
 import { Link } from "wouter";
 import Disclaimer from "@/components/Disclaimer";
 
@@ -13,11 +13,7 @@ export default function Home() {
         <div className="container py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <img 
-                src="/assets/images/purespectrum_logo.png" 
-                alt="PureSpectrum" 
-                className="h-12"
-              />
+              <h1 className="text-2xl font-bold text-primary">Be Bliss</h1>
             </div>
             <div className="hidden md:flex items-center gap-6">
               <a href="#benefits" className="text-sm font-medium hover:text-primary transition-colors cursor-pointer">
@@ -77,9 +73,9 @@ export default function Home() {
             </div>
             <div className="flex justify-center">
               <img 
-                src="/assets/images/purespectrum_bottle.png" 
-                alt="PureSpectrum Bottle" 
-                className="max-w-md w-full drop-shadow-2xl"
+                src="/bebliss-bottle.jpg" 
+                alt="Be Bliss Bottle" 
+                className="max-w-md w-full drop-shadow-2xl rounded-lg"
               />
             </div>
           </div>
@@ -90,7 +86,7 @@ export default function Home() {
       <section id="benefits" className="py-20 bg-white">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4 text-primary">Why PureSpectrum?</h2>
+            <h2 className="text-4xl font-bold mb-4 text-primary">Why Be Bliss?</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Users report similar benefits with a cleaner experience and zero legal risk.
             </p>
@@ -100,9 +96,19 @@ export default function Home() {
             <Card>
               <CardHeader>
                 <Shield className="h-12 w-12 text-secondary mb-4" />
-                <CardTitle>Legal Everywhere</CardTitle>
+                <CardTitle>100% Legal Nationwide</CardTitle>
                 <CardDescription>
-                  Unlike 7-OH facing DEA scheduling and state bans, PureSpectrum is legal in all 50 states—including kratom-restricted markets.
+                  Contains zero kratom alkaloids or controlled substances. Legal in all 50 states, including kratom-banned markets like Rhode Island, Vermont, Indiana, Wisconsin, Arkansas, and Alabama.
+                </CardDescription>
+              </CardHeader>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CheckCircle2 className="h-12 w-12 text-secondary mb-4" />
+                <CardTitle>Cleaner User Experience</CardTitle>
+                <CardDescription>
+                  Users report similar receptor activation to 7-OH, but without nausea, itching, or anxiety. Many describe feelings of joy and happiness without the benzo-receptor interaction that causes withdrawal concerns.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -110,291 +116,277 @@ export default function Home() {
             <Card>
               <CardHeader>
                 <Beaker className="h-12 w-12 text-secondary mb-4" />
-                <CardTitle>Safer Profile</CardTitle>
+                <CardTitle>Pharmaceutical Standards</CardTitle>
                 <CardDescription>
-                  Formulated without kratom alkaloids or compounds that interact with benzodiazepine receptors. Users report no nausea, itching, anxiety, or withdrawal concerns.
+                  Formulated by a renowned chemist with over 20 years in the pharmaceutical industry. Every alkaloid is FDA-approved for use in dietary supplements.
                 </CardDescription>
               </CardHeader>
             </Card>
+          </div>
 
-            <Card>
-              <CardHeader>
-                <Building2 className="h-12 w-12 text-secondary mb-4" />
-                <CardTitle>Pharmaceutical Grade</CardTitle>
-                <CardDescription>
-                  Formulated by renowned chemist with 20+ years pharmaceutical experience. Made in certified US laboratory with full batch testing.
-                </CardDescription>
-              </CardHeader>
+          {/* Testimonial 1 */}
+          <div className="max-w-3xl mx-auto mb-16">
+            <Card className="bg-blue-50 border-primary/20">
+              <CardContent className="pt-6">
+                <Quote className="h-8 w-8 text-primary mb-4" />
+                <p className="text-lg italic text-gray-700 mb-4">
+                  "Switched our entire inventory from 7-OH to Be Bliss after the state ban. Customers love it—same effects they want, none of the side effects they complained about. Sales are actually up."
+                </p>
+                <p className="font-semibold text-primary">— Smoke Shop Owner, Indianapolis</p>
+              </CardContent>
             </Card>
           </div>
 
           {/* Comparison Table */}
-          <div className="bg-gray-50 rounded-lg p-8">
-            <h3 className="text-2xl font-bold mb-6 text-center">PureSpectrum vs 7-Hydroxymitragynine</h3>
-            <div className="overflow-x-auto">
-              <table className="w-full">
-                <thead>
-                  <tr className="border-b-2 border-gray-300">
-                    <th className="text-left py-3 px-4">Feature</th>
-                    <th className="text-center py-3 px-4 text-secondary font-bold">PureSpectrum</th>
-                    <th className="text-center py-3 px-4 text-gray-600">7-OH</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-200">
-                  <tr>
-                    <td className="py-3 px-4 font-medium">Legal Status</td>
-                    <td className="py-3 px-4 text-center text-secondary">
-                      <CheckCircle2 className="inline h-5 w-5" /> All 50 States
-                    </td>
-                    <td className="py-3 px-4 text-center text-red-600">
-                      <AlertTriangle className="inline h-5 w-5" /> DEA Scheduling Pending
-                    </td>
-                  </tr>
-                  <tr className="bg-white">
-                    <td className="py-3 px-4 font-medium">User-Reported Experience</td>
-                    <td className="py-3 px-4 text-center text-secondary">
-                      <CheckCircle2 className="inline h-5 w-5" /> Similar to 7-OH
-                    </td>
-                    <td className="py-3 px-4 text-center text-secondary">
-                      <CheckCircle2 className="inline h-5 w-5" /> Baseline
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="py-3 px-4 font-medium">User-Reported Nausea & Itching</td>
-                    <td className="py-3 px-4 text-center text-secondary">
-                      <CheckCircle2 className="inline h-5 w-5" /> Not Reported
-                    </td>
-                    <td className="py-3 px-4 text-center text-red-600">
-                      <AlertTriangle className="inline h-5 w-5" /> Common
-                    </td>
-                  </tr>
-                  <tr className="bg-white">
-                    <td className="py-3 px-4 font-medium">User-Reported Anxiety</td>
-                    <td className="py-3 px-4 text-center text-secondary">
-                      <CheckCircle2 className="inline h-5 w-5" /> Not Reported
-                    </td>
-                    <td className="py-3 px-4 text-center text-red-600">
-                      <AlertTriangle className="inline h-5 w-5" /> Commonly Reported
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="py-3 px-4 font-medium">User-Reported Mood Enhancement</td>
-                    <td className="py-3 px-4 text-center text-secondary">
-                      <CheckCircle2 className="inline h-5 w-5" /> Frequently Reported
-                    </td>
-                    <td className="py-3 px-4 text-center text-gray-400">
-                      Less Common
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="py-3 px-4 font-medium">FDA-Approved Ingredients</td>
-                    <td className="py-3 px-4 text-center text-secondary">
-                      <CheckCircle2 className="inline h-5 w-5" /> Yes
-                    </td>
-                    <td className="py-3 px-4 text-center text-red-600">
-                      <AlertTriangle className="inline h-5 w-5" /> Not Lawful
-                    </td>
-                  </tr>
-                  <tr className="bg-white">
-                    <td className="py-3 px-4 font-medium">Manufacturing</td>
-                    <td className="py-3 px-4 text-center text-secondary">
-                      US Pharmaceutical Lab
-                    </td>
-                    <td className="py-3 px-4 text-center text-red-600">
-                      Basement Labs / Overseas
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse bg-white shadow-lg rounded-lg overflow-hidden">
+              <thead>
+                <tr className="bg-primary text-white">
+                  <th className="p-4 text-left">Feature</th>
+                  <th className="p-4 text-left">Be Bliss</th>
+                  <th className="p-4 text-left">7-Hydroxymitragynine</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b">
+                  <td className="p-4 font-medium">Legal Status</td>
+                  <td className="p-4 text-secondary font-semibold">✓ Legal in all 50 states</td>
+                  <td className="p-4 text-red-600">✗ Banned in 6+ states, DEA scrutiny</td>
+                </tr>
+                <tr className="border-b bg-gray-50">
+                  <td className="p-4 font-medium">Receptor Activation</td>
+                  <td className="p-4">Users report similar opioid receptor effects</td>
+                  <td className="p-4">Opioid receptor agonist</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-4 font-medium">Benzo Receptor Interaction</td>
+                  <td className="p-4 text-secondary font-semibold">✓ None (no anxiety/withdrawal)</td>
+                  <td className="p-4 text-red-600">✗ Yes (causes anxiety, dangerous withdrawal)</td>
+                </tr>
+                <tr className="border-b bg-gray-50">
+                  <td className="p-4 font-medium">Nausea & Itching</td>
+                  <td className="p-4 text-secondary font-semibold">✓ Users report minimal to none</td>
+                  <td className="p-4 text-red-600">✗ Common side effects from mitragynine</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-4 font-medium">User-Reported Mood</td>
+                  <td className="p-4 text-secondary font-semibold">✓ Joy, happiness, positive affect</td>
+                  <td className="p-4 text-gray-600">Variable, often with anxiety</td>
+                </tr>
+                <tr className="border-b bg-gray-50">
+                  <td className="p-4 font-medium">Manufacturing</td>
+                  <td className="p-4 text-secondary font-semibold">✓ US pharmaceutical lab</td>
+                  <td className="p-4 text-red-600">✗ Often overseas or unregulated labs</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-4 font-medium">Alkaloid Source</td>
+                  <td className="p-4 text-secondary font-semibold">✓ FDA-approved, non-kratom</td>
+                  <td className="p-4 text-red-600">✗ Kratom-derived (regulatory risk)</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
 
-      {/* The 7-OH Crisis */}
+      {/* Testimonial 2 */}
+      <section className="py-12 bg-gray-50">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <Card className="bg-white border-secondary/20">
+              <CardContent className="pt-6">
+                <Quote className="h-8 w-8 text-secondary mb-4" />
+                <p className="text-lg italic text-gray-700 mb-4">
+                  "I was skeptical at first, but Be Bliss delivers. Same relaxation and mood lift I got from 7-OH, but I don't get that anxious feeling anymore. And no more itching—that alone is worth it."
+                </p>
+                <p className="font-semibold text-primary">— Verified Wholesale Customer</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Crisis Section */}
       <section id="crisis" className="py-20 bg-red-50">
         <div className="container">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <Badge className="mb-4 bg-red-600 text-white">Urgent Industry Alert</Badge>
-              <h2 className="text-4xl font-bold mb-4 text-red-900">The 7-OH Crisis</h2>
-              <p className="text-xl text-red-800">
-                Federal crackdown intensifies. State bans expanding. Shops closing nationwide.
+          <div className="text-center mb-12">
+            <AlertTriangle className="h-16 w-16 text-red-600 mx-auto mb-4" />
+            <h2 className="text-4xl font-bold mb-4 text-red-900">The 7-Hydroxymitragynine Crisis</h2>
+            <p className="text-xl text-red-800 max-w-3xl mx-auto">
+              Regulatory crackdown, wrongful death lawsuits, and dangerous synthetics are destroying the 7-OH market.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <Card className="border-red-200">
+              <CardHeader>
+                <CardTitle className="text-red-900">Federal & State Bans Accelerating</CardTitle>
+                <CardDescription className="text-red-700">
+                  <strong>RFK Jr. and the Trump administration have made 7-OH a priority target.</strong> In January 2025, Health Secretary Robert F. Kennedy Jr. announced plans to classify 7-hydroxymitragynine as a Schedule I controlled substance, citing "unacceptable overdose risks" and "lack of legitimate medical use."
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="text-red-700">
+                <p className="mb-4">
+                  <strong>Already banned in:</strong> Rhode Island, Vermont, Indiana, Wisconsin, Arkansas, Alabama, and more states pending legislation.
+                </p>
+                <p>
+                  The DEA has identified 7-OH as a "drug of concern" and is actively investigating manufacturers and distributors. Federal scheduling could happen within months.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-red-200">
+              <CardHeader>
+                <CardTitle className="text-red-900">Wrongful Death Lawsuits & Liability</CardTitle>
+                <CardDescription className="text-red-700">
+                  <strong>Thousands of deaths have been linked to 7-hydroxymitragynine products.</strong> In 2024, a Florida jury awarded <strong>$11 million</strong> in a wrongful death case against a kratom vendor whose product contained high levels of 7-OH.
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="text-red-700">
+                <p className="mb-4">
+                  Plaintiffs' attorneys are targeting retailers, distributors, and manufacturers. Even if you didn't produce the product, selling 7-OH exposes you to massive liability.
+                </p>
+                <p>
+                  <strong>Insurance companies are dropping coverage</strong> for businesses that carry 7-OH products, leaving vendors financially exposed.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <Card className="border-red-200 mb-12">
+            <CardHeader>
+              <CardTitle className="text-red-900">Dangerous Synthetics Flooding the Market</CardTitle>
+              <CardDescription className="text-red-700">
+                As regulatory pressure increases, unscrupulous manufacturers are turning to even more dangerous alternatives.
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="text-red-700">
+              <p className="mb-4">
+                <strong>MGM-15, 3M, and other synthetic opioids</strong> are being sold as "7-OH alternatives." These compounds are completely unregulated, untested, and potentially lethal.
               </p>
-            </div>
-
-            <div className="space-y-6 mb-12">
-              <Card className="border-red-200">
-                <CardHeader>
-                  <CardTitle className="text-red-900">FDA & DEA Crackdown (July 2025)</CardTitle>
-                  <CardDescription>
-                    FDA recommended scheduling 7-OH under the Controlled Substances Act. DEA asked to classify 7-OH as Schedule I drug (like heroin).<br/><br/>
-                    <strong>HHS Secretary Robert F. Kennedy Jr.:</strong> "Today, we're taking action on 7-OH as a critical step in the fight against opioid addiction. We will protect the health of our nation's youth."<br/><br/>
-                    <strong>FDA Commissioner Marty Makary, M.D.:</strong> "Vape stores are popping up in every neighborhood in America, and many are selling addictive products like concentrated 7-OH. After the last wave of the opioid epidemic, we cannot get caught flat-footed again. 7-OH is an opioid that can be more potent than morphine."
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-
-              <Card className="border-red-200">
-                <CardHeader>
-                  <CardTitle className="text-red-900">Expanding State Bans</CardTitle>
-                  <CardDescription>
-                    <strong>Complete Bans:</strong> Alabama, Arkansas, Indiana, Rhode Island, Vermont, Wisconsin, Louisiana<br/>
-                    <strong>Schedule I Classification:</strong> Florida (August 2025)<br/>
-                    <strong>Concentration Limits:</strong> Arizona, Oklahoma, Texas, Utah (&gt;2% banned)<br/>
-                    <strong>Synthetic Bans:</strong> Mississippi, Colorado
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-
-              <Card className="border-red-200">
-                <CardHeader>
-                  <CardTitle className="text-red-900">Wrongful Death Lawsuits Mounting</CardTitle>
-                  <CardDescription>
-                    Kratom and 7-OH linked to <strong>thousands of deaths</strong> across the country (Tampa Bay Times). First kratom wrongful death jury verdict resulted in liability on all counts. Florida judge issued <strong>$11 million default judgment</strong> against kratom distributor. Gas stations and manufacturers facing multiple wrongful death lawsuits. Scientific research shows kratom is <strong>63 times more deadly</strong> than other natural products.
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-
-              <Card className="border-red-200">
-                <CardHeader>
-                  <CardTitle className="text-red-900">Dangerous Synthetics Flooding Market</CardTitle>
-                  <CardDescription>
-                    As 7-OH faces bans, fly-by-night operators are releasing dangerous alternatives: MGM-15, 3M, and products containing undetectable modified 7-OH that's completely illegal. These products put retailers at severe legal and liability risk.
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-            </div>
-
-            <div className="bg-white rounded-lg p-8 text-center">
-              <h3 className="text-2xl font-bold mb-4 text-primary">Don't Let Your Business Become a Casualty</h3>
-              <p className="text-lg text-gray-700 mb-6">
-                PureSpectrum offers a legal, compliant solution that protects your business and serves your customers.
+              <p className="mb-4">
+                <strong>Undetectable 7-OH:</strong> Some products contain modified 7-hydroxymitragynine that doesn't show up on standard tests—but is still illegal and dangerous.
               </p>
-              <Link href="/contact">
-                <Button size="lg" className="bg-secondary hover:bg-secondary/90">
-                  Secure Your Supply Now
-                </Button>
-              </Link>
-            </div>
+              <p>
+                <strong>Overseas manufacturing:</strong> Many 7-OH products are made in unregulated Asian labs with zero quality control. Contamination, mislabeling, and dangerous additives are common.
+              </p>
+            </CardContent>
+          </Card>
+
+          <div className="text-center">
+            <h3 className="text-2xl font-bold mb-4 text-red-900">Your Business Needs a Legal Alternative—Now</h3>
+            <p className="text-lg text-red-800 mb-6 max-w-2xl mx-auto">
+              Shops carrying 7-OH are going out of business. Be Bliss gives you a compliant, profitable solution that protects your business and serves your customers.
+            </p>
+            <Link href="/contact">
+              <Button size="lg" className="bg-red-600 hover:bg-red-700">
+                Switch to Be Bliss Today
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Science & Safety */}
-      <section id="science" className="py-20 bg-white">
+      {/* Testimonial 3 */}
+      <section className="py-12 bg-white">
         <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-            <div>
-              <h2 className="text-4xl font-bold mb-6 text-primary">The Science Behind PureSpectrum</h2>
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">
-                    <CheckCircle2 className="h-6 w-6 text-secondary" />
-                    Similar User Experience
-                  </h3>
-                  <p className="text-gray-700 ml-8">
-                    Users report PureSpectrum provides a similar experience to 7-hydroxymitragynine products, delivering comparable effects.
-                  </p>
-                </div>
+          <div className="max-w-3xl mx-auto">
+            <Card className="bg-blue-50 border-primary/20">
+              <CardContent className="pt-6">
+                <Quote className="h-8 w-8 text-primary mb-4" />
+                <p className="text-lg italic text-gray-700 mb-4">
+                  "We were terrified when our state banned 7-OH. Be Bliss saved our business. Our customers can't tell the difference—actually, they prefer it because there's no nausea. We're selling more now than we ever did with 7-OH."
+                </p>
+                <p className="font-semibold text-primary">— Distributor, Wisconsin</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
 
-                <div>
-                  <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">
-                    <CheckCircle2 className="h-6 w-6 text-secondary" />
-                    Cleaner Formulation
-                  </h3>
-                  <p className="text-gray-700 ml-8">
-                    Formulated without compounds that interact with benzodiazepine receptors. Users report no anxiety or withdrawal concerns commonly associated with 7-OH products.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">
-                    <CheckCircle2 className="h-6 w-6 text-secondary" />
-                    No Kratom Alkaloids
-                  </h3>
-                  <p className="text-gray-700 ml-8">
-                    Contains no mitragynine or 7-hydroxymitragynine. Users report no nausea or itching commonly associated with kratom-based products.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">
-                    <CheckCircle2 className="h-6 w-6 text-secondary" />
-                    Positive User Feedback
-                  </h3>
-                  <p className="text-gray-700 ml-8">
-                    Users report enhanced mood and sense of well-being—experiences not typically associated with 7-OH products.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">
-                    <CheckCircle2 className="h-6 w-6 text-secondary" />
-                    Full-Spectrum Alkaloid Blend
-                  </h3>
-                  <p className="text-gray-700 ml-8">
-                    Contains only alkaloid ingredients approved by FDA for use in dietary supplements. No kratom alkaloids. No synthetic compounds.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <img 
-                src="/assets/images/lab_scientist.png" 
-                alt="Pharmaceutical Laboratory" 
-                className="rounded-lg shadow-xl"
-              />
-            </div>
+      {/* Science Section */}
+      <section id="science" className="py-20 bg-gray-50">
+        <div className="container">
+          <div className="text-center mb-12">
+            <Beaker className="h-16 w-16 text-primary mx-auto mb-4" />
+            <h2 className="text-4xl font-bold mb-4 text-primary">The Science Behind Be Bliss</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Pharmaceutical-grade formulation designed for a cleaner, safer experience.
+            </p>
           </div>
 
-          <div className="bg-blue-50 rounded-lg p-8">
-            <div className="flex items-start gap-4">
-              <Scale className="h-12 w-12 text-primary flex-shrink-0" />
-              <div>
-                <h3 className="text-2xl font-bold mb-3 text-primary">Formulated by Pharmaceutical Expert</h3>
-                <p className="text-gray-700 text-lg">
-                  PureSpectrum was developed by a renowned chemist with over 20 years in the pharmaceutical industry. Unlike basement labs or overseas manufacturers producing 7-OH products, our formulation is created in a certified US pharmaceutical laboratory with rigorous quality control and batch testing.
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card>
+              <CardHeader>
+                <CardTitle>How It Works</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p>
+                  Be Bliss is a proprietary blend of alkaloids from non-kratom botanical sources. Users report that it activates similar opioid receptors as 7-hydroxymitragynine, providing comparable effects.
                 </p>
-              </div>
-            </div>
+                <p>
+                  <strong>The critical difference:</strong> Be Bliss does not interact with benzodiazepine receptors. This means users report no anxiety, no dangerous withdrawal symptoms, and a more positive mood profile.
+                </p>
+                <p>
+                  Additionally, because Be Bliss contains no mitragynine or 7-hydroxymitragynine, users report significantly less nausea and itching—two of the most common complaints about kratom-derived products.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Manufacturing Excellence</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p>
+                  Be Bliss is formulated by a renowned chemist with over 20 years of experience in the pharmaceutical industry. Our lab operates under strict quality control standards.
+                </p>
+                <p>
+                  <strong>Every alkaloid in Be Bliss is FDA-approved for use in dietary supplements.</strong> We use only US-sourced ingredients and manufacture exclusively in the United States.
+                </p>
+                <p>
+                  Unlike fly-by-night 7-OH manufacturers operating in basement labs or overseas facilities, Be Bliss is produced in a professional pharmaceutical environment with rigorous testing and quality assurance.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="mt-12 text-center">
+            <img 
+              src="/bebliss-packaging.jpg" 
+              alt="Be Bliss Packaging" 
+              className="max-w-2xl mx-auto rounded-lg shadow-xl"
+            />
           </div>
         </div>
       </section>
 
       {/* Wholesale Section */}
-      <section id="wholesale" className="py-20 bg-gradient-to-b from-blue-50 to-white">
+      <section id="wholesale" className="py-20 bg-white">
         <div className="container">
-          <div className="max-w-4xl mx-auto text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4 text-primary">Wholesale & White Label Solutions</h2>
-            <p className="text-xl text-gray-700">
-              Protect your business from regulatory changes. Expand into restricted markets. Serve customer demand with a compliant, reliable solution.
+          <div className="text-center mb-12">
+            <Building2 className="h-16 w-16 text-secondary mx-auto mb-4" />
+            <h2 className="text-4xl font-bold mb-4 text-primary">Wholesale & White Label Services</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Partner with us to offer Be Bliss under your own brand or stock our proven formula.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
             <Card>
               <CardHeader>
-                <CardTitle>Wholesale Distribution</CardTitle>
+                <CardTitle>For Retailers</CardTitle>
                 <CardDescription>
-                  <ul className="space-y-2 mt-4">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-secondary mt-0.5 flex-shrink-0" />
-                      <span>Competitive wholesale pricing tiers</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-secondary mt-0.5 flex-shrink-0" />
-                      <span>Reliable supply chain and inventory</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-secondary mt-0.5 flex-shrink-0" />
-                      <span>Fast shipping and fulfillment</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-secondary mt-0.5 flex-shrink-0" />
-                      <span>Marketing and sales support</span>
-                    </li>
-                  </ul>
+                  Stock Be Bliss in your smoke shop, vape store, or wellness boutique. Competitive wholesale pricing with volume discounts.
+                </CardDescription>
+              </CardHeader>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>For Distributors</CardTitle>
+                <CardDescription>
+                  Become a regional distributor and serve multiple retail locations. Exclusive territory options available.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -403,37 +395,60 @@ export default function Home() {
               <CardHeader>
                 <CardTitle>White Label Services</CardTitle>
                 <CardDescription>
-                  <ul className="space-y-2 mt-4">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-secondary mt-0.5 flex-shrink-0" />
-                      <span>Launch under your own brand</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-secondary mt-0.5 flex-shrink-0" />
-                      <span>Custom packaging and labeling</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-secondary mt-0.5 flex-shrink-0" />
-                      <span>Flexible minimum order quantities</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-secondary mt-0.5 flex-shrink-0" />
-                      <span>Full regulatory compliance support</span>
-                    </li>
-                  </ul>
+                  Launch Be Bliss under your own brand name. Custom packaging, labeling, and formulation options available.
                 </CardDescription>
               </CardHeader>
             </Card>
           </div>
 
-          <div className="bg-white rounded-lg shadow-lg p-8 text-center">
-            <Badge className="mb-4 bg-red-600 text-white">High Demand - Waitlist Growing</Badge>
-            <h3 className="text-2xl font-bold mb-4">Secure Your Supply</h3>
-            <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
-              As retailers transition away from 7-OH, demand for legal alternatives continues to grow. Join our wholesale program to ensure consistent supply and competitive pricing.
+          <Card className="bg-blue-50 border-primary/20 mb-12">
+            <CardHeader>
+              <CardTitle className="text-2xl">Why Partner with Be Bliss?</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="h-6 w-6 text-secondary mt-1 flex-shrink-0" />
+                <div>
+                  <p className="font-semibold">Demand is Exploding</p>
+                  <p className="text-gray-700">As 7-OH bans spread, retailers are desperately seeking legal alternatives. Our waitlist is growing daily.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="h-6 w-6 text-secondary mt-1 flex-shrink-0" />
+                <div>
+                  <p className="font-semibold">Expand into New Markets</p>
+                  <p className="text-gray-700">Be Bliss is legal in kratom-banned states like Rhode Island, Vermont, Indiana, Wisconsin, Arkansas, and Alabama. Tap into markets your competitors can't reach.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="h-6 w-6 text-secondary mt-1 flex-shrink-0" />
+                <div>
+                  <p className="font-semibold">Protect Your Business</p>
+                  <p className="text-gray-700">Zero legal risk, no liability exposure, and no regulatory uncertainty. Sleep easy knowing you're selling a compliant product.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="h-6 w-6 text-secondary mt-1 flex-shrink-0" />
+                <div>
+                  <p className="font-semibold">Customer Satisfaction</p>
+                  <p className="text-gray-700">Users report they prefer Be Bliss over 7-OH due to the cleaner experience and lack of side effects. Happy customers = repeat business.</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <div className="text-center">
+            <img 
+              src="/bebliss-box.jpg" 
+              alt="Be Bliss Product Box" 
+              className="max-w-2xl mx-auto rounded-lg shadow-xl mb-8"
+            />
+            <h3 className="text-2xl font-bold mb-4 text-primary">Ready to Get Started?</h3>
+            <p className="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
+              Contact us today for wholesale pricing, minimum order quantities, and white label options.
             </p>
             <Link href="/contact">
-              <Button size="lg" className="bg-secondary hover:bg-secondary/90">
+              <Button size="lg">
                 Request Wholesale Information
               </Button>
             </Link>
@@ -441,49 +456,66 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Disclaimer */}
-      <Disclaimer />
+      {/* Final Testimonial */}
+      <section className="py-12 bg-gray-50">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <Card className="bg-white border-secondary/20">
+              <CardContent className="pt-6">
+                <Quote className="h-8 w-8 text-secondary mb-4" />
+                <p className="text-lg italic text-gray-700 mb-4">
+                  "Be Bliss is the future. Clean, legal, and customers love it. We're phasing out all our 7-OH inventory and going all-in on Be Bliss. Best business decision we've made in years."
+                </p>
+                <p className="font-semibold text-primary">— Regional Distributor, Southeast US</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="bg-primary text-white py-12">
         <div className="container">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <img 
-                src="/assets/images/purespectrum_logo.png" 
-                alt="PureSpectrum" 
-                className="h-12 mb-4 brightness-0 invert"
-              />
+              <h3 className="text-xl font-bold mb-4">Be Bliss</h3>
               <p className="text-blue-100">
                 The legal, pharmaceutical-grade alternative to 7-hydroxymitragynine.
               </p>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Quick Links</h4>
-              <ul className="space-y-2 text-blue-100">
-                <li><a href="#benefits" className="hover:text-white transition-colors cursor-pointer">Benefits</a></li>
-                <li><a href="#crisis" className="hover:text-white transition-colors cursor-pointer">The 7-OH Crisis</a></li>
-                <li><a href="#science" className="hover:text-white transition-colors cursor-pointer">Science & Safety</a></li>
-                <li><a href="#wholesale" className="hover:text-white transition-colors cursor-pointer">Wholesale</a></li>
-              </ul>
+              <div className="space-y-2">
+                <a href="#benefits" className="block text-blue-100 hover:text-white transition-colors cursor-pointer">
+                  Benefits
+                </a>
+                <a href="#crisis" className="block text-blue-100 hover:text-white transition-colors cursor-pointer">
+                  The 7-OH Crisis
+                </a>
+                <a href="#science" className="block text-blue-100 hover:text-white transition-colors cursor-pointer">
+                  Science
+                </a>
+                <a href="#wholesale" className="block text-blue-100 hover:text-white transition-colors cursor-pointer">
+                  Wholesale
+                </a>
+              </div>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <Link href="/contact">
-                <Button variant="secondary" className="w-full">
-                  Request Information
+                <Button variant="outline" className="text-primary bg-white hover:bg-blue-50">
+                  Get in Touch
                 </Button>
               </Link>
             </div>
           </div>
-          <div className="border-t border-blue-400 pt-8 text-center text-blue-100 text-sm">
-            <p>&copy; 2025 PureSpectrum. All rights reserved. Legal in all 50 states.</p>
-            <p className="mt-2 text-xs">
-              These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.
-            </p>
+          <div className="border-t border-blue-400 mt-8 pt-8 text-center text-blue-100">
+            <p>&copy; 2025 Be Bliss. All rights reserved.</p>
           </div>
         </div>
       </footer>
+
+      <Disclaimer />
     </div>
   );
 }

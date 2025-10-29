@@ -43,11 +43,7 @@ export default function ContactStatic() {
         <div className="container">
           <div className="flex items-center justify-between h-16">
             <Link href="/">
-              <img 
-                src="/purespectrum_logo.png" 
-                alt="PureSpectrum" 
-                className="h-12 cursor-pointer"
-              />
+              <h1 className="text-2xl font-bold text-primary cursor-pointer">Be Bliss</h1>
             </Link>
             <Link href="/">
               <Button variant="outline">Back to Home</Button>
@@ -122,7 +118,7 @@ export default function ContactStatic() {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   {/* Web3Forms Access Key - Replace with your own */}
                   <input type="hidden" name="access_key" value="7e57fd05-68ea-4f99-ac15-a902b886a89c" />
-                  <input type="hidden" name="subject" value="New PureSpectrum Wholesale Inquiry" />
+                  <input type="hidden" name="subject" value="New Be Bliss Wholesale Inquiry" />
                   
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="space-y-2">
